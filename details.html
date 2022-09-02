@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+<!-- all google fonts start here -->
+
+
+<!-- all google fonts end here -->
+
+<!-- all css start here -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- all css end here -->
+  <title>Mr Creation</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark py-0" id="main-nav">
+    <div class="container">
+      <a href="index.html" class="navbar-brand">MrCreation</a>
+
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link">Dashboard</a>
+        </li>
+ 
+        <li class="nav-item">
+          <a href="posts.html" class="nav-link">Posts</a>
+        </li>
+ 
+        <li class="nav-item">
+          <a href="categories.html" class="nav-link">Categories</a>
+        </li>
+ 
+        <li class="nav-item">
+          <a href="users.html" class="nav-link">Users</a>
+        </li>
+      </ul>
+
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item dropdown mr-3 ">
+          <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
+            <i class="fas fa-user mr-2"></i>Welcome Mamun
+          </a>
+
+          <div class="dropdown-menu bg-primary">
+            <a href="profile.html" class="dropdown-item">
+              <i class="fas fa-user-circle mr-2"></i>Profile
+            </a>
+            <a href="settings.html" class="dropdown-item">
+              <i class="fas fa-cog mr-2"></i>Settings
+            </a>
+        </li>
+
+        <li class="nav-item"><a href="login.html" class="nav-link">
+          <i class="fas fa-user-times mr-2"></i>Logout
+        </a></li>
+      </ul>
+    </div>
+    </div>
+  </nav>
+
+<!-- header section start here -->
+<section id="main_header" class="bg-primary text-white py-2">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h1> Post One</h1>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- header section start here -->
+
+<!-- actions -->
+
+<section id="actions" class="mb-4 py-4 bg-light">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <a href="index.html" class="btn btn-light btn-block">
+          <i class="fas fa-arrow-left">  Back to Dashboad</i>
+        </a>
+      </div>
+      <div class="col-md-3">
+        <a href="index.html" class="btn btn-success btn-block">
+          <i class="fas fa-check"> Save Changes</i>
+        </a>
+      </div>
+      <div class="col-md-3">
+        <a href="index.html" class="btn btn-danger btn-block">
+          <i class="fas fa-trash"> Delete Post</i>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- actions -->
+
+<!-- post  details-->
+
+
+<section id="post_details">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">Edit Post</h3>
+                    </div>
+                    <div class="card-body">
+                        <form>
+                            <div class="form-group">
+                              <label for="title">Title</label>
+                              <input type="text" class="form-control" placeholder="Post One">
+                            </div>                
+                            <div class="form-group">
+                              <label for="category">Category</label>
+                              <select class="form-control">
+                                <option value="">Web Design</option>
+                                <option value="">Web Developement</option>
+                                <option value="">Graphics Design</option>
+                                <option value="">Digital Marketing</option>
+                                <option value="">Ui UX</option>
+                              </select>
+                            </div>                 
+                            <div class="form-group">
+                              <label for="image">Image</label>
+                              <div class="custom-file">
+                                <input type="file" class="custom-file-input" id="image">
+                                <label for="image" class="custom-file-label">Choose File</label>                
+                              </div>                 
+                              <small class="form-text text-muted">Max size 3MB</small>
+                            </div>                 
+                            <div class="form-group">
+                              <label for="body">Body</label>
+                              <textarea name="editor1"  class="form-control">
+                                <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore ipsa unde sapiente nisi totam veritatis? Neque placeat pariatur blanditiis dolore inventore ea nesciunt omnis! Sint quos facilis possimus saepe tempore consequatur doloremque hic ab inventore quidem libero odio similique beatae aliquid, iure molestias sed eveniet nihil consequuntur voluptates exercitationem. Optio!</p>
+                              </textarea>
+                            </div>
+                          </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- post  details-->
+
+
+<!-- footer section start here -->
+
+<footer id="main-footer" class="text-center bg-dark text-white pt-3">
+  <div class="container">
+    <div class="row">
+      <div class="col text-center py-3">
+        <p>Copyright &copy; 2022  ||  MrCreation</p>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- footer end here -->
+
+<!-- modals section start here -->
+
+<!-- add post modal start -->
+<div class="modal fade" id="addPostModal">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header bg-primary text-white">
+        <h5 class="modal-title">Add Post</h5>
+        <button class="close" data-dismiss="modal"> <span>&times;</span></button>
+      </div>
+
+      <div class="modal-body">
+        <form action="">
+          <div class="form-group">
+            <label for="title">Title</label>
+            <input type="text" class="form-control">
+          </div>
+
+          <div class="form-group">
+            <label for="category">Category</label>
+            <select class="form-control">
+              <option value="">Web Design</option>
+              <option value="">Web Developement</option>
+              <option value="">Graphics Design</option>
+              <option value="">Digital Marketing</option>
+              <option value="">Ui UX</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="image">Image</label>
+            <div class="custom-file">
+              <input type="file" class="custom-file-input" id="image">
+              <label for="image" class="custom-file-label">Choose File</label>
+
+            </div>
+
+            <small class="form-text text-muted">Max size 3MB</small>
+          </div>
+
+          <div class="form-group">
+            <label for="body">Body</label>
+            <textarea name="editor1"  class="form-control"></textarea>
+          </div>
+        </form>
+      </div>
+
+
+      <div class="modal-footer">
+        <button class="btn btn-primary" data-dismiss="modal">Save Changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- add post modal end -->
+
+
+<!-- add post modal start -->
+<div class="modal fade" id="addCatModal">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header bg-success text-white">
+        <h5 class="modal-title">Add Post</h5>
+        <button class="close" data-dismiss="modal"> <span>&times;</span></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="Name">Name</label>
+            <input type="text" class="form-control">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-success" data-dismiss="modal">Save Changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- add post modal end -->
+<!-- add post modal start -->
+<div class="modal fade" id="addUserModal">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header bg-warning text-white">
+        <h5 class="modal-title">Add Post</h5>
+        <button class="close" data-dismiss="modal"> <span>&times;</span></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" class="form-control">
+          </div>
+        </form>
+        <form>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control">
+          </div>
+        </form>
+        <form>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" class="form-control">
+          </div>
+        </form>
+        <form>
+          <div class="form-group">
+            <label for="passowrd2">Confirm Password</label>
+            <input type="password" class="form-control">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-warning" data-dismiss="modal">Save Changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- add post modal end -->
+<!-- modals section start here -->
+
+  <!-- all js start here -->
+  <script src="js/jquery-1.12.4.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.ckeditor.com/4.19.1/standard/ckeditor.js"></script>
+  <script src="js/ckeditor.js"></script>
+  <script src="js/custom.js"></script>
+  <!-- all js end here -->
+</body>
+
+</html>
